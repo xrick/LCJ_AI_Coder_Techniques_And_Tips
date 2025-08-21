@@ -1,0 +1,6 @@
+/home/mapleleaf/LCJRepos/projects/mlinfo_kb_platform/scripts/import_nb_specs.py /home/mapleleaf/LCJRepos/projects/mlinfo_kb_platform/scripts/query_nb_specs.py /home/mapleleaf/LCJRepos/projects/mlinfo_kb_platform/scripts/README_nb_specs.md /home/mapleleaf/LCJRepos/projects/mlinfo_kb_platform/scripts/test_nb_spec_import.py
+
+1.要給予正確的資料夾路徑
+2.要給予建立的資料庫名稱
+3.若ai-coder沒有主動建立讓你檢查已經建立的資料表的cli程式，請它建立，並進行測試。
+4.請其產生關於資料庫及如何使cli程式的cli程式。

@@ -1,0 +1,19 @@
+
+enter research
+1.請以資料夾"data/raw/EM_New TTL_241104_AllTransformedToGoogleSheet" 為資料來源，在本機的milvus default db建立collection.
+    ** 請務必注意 **，我們採用** parent-child chunking technique **
+2.請先刪除名稱為"new_pc_v2" 的collection
+3.以下為milvus的連接資料
+MILVUS_HOST = "localhost"
+MILVUS_PORT = "19530"
+COLLECTION_NAME = "new_nb_pc_v1"
+4. primary key information:
+FieldSchema(name="pk", dtype=DataType.INT64, is_primary=True, auto_id=True)
+5.內容fields infomation:
+FieldSchema(name="doc_id", dtype=DataType.INT64),
+FieldSchema(name="source", dtype=DataType.VARCHAR, max_length=512),
+FieldSchema(name="parent_text", dtype=DataType.VARCHAR, max_length=65535),
+ FieldSchema(name="chunk_text", dtype=DataType.VARCHAR, max_length=1000),
+6. vector field information:
+FieldSchema(name="query_vector", dtype=DataType.FLOAT_VECTOR, dim=DIMENSION)
+請先擬定可行性計畫
